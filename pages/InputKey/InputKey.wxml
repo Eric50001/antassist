@@ -1,0 +1,10 @@
+<!--pages/InputKey/InputKey.wxml-->
+<view class="inquire">
+  
+  <input placeholder="请输入企业名称关键字" value="{{Key_Word}}" bindchange="inq_Key"> </input>
+  <view class="bussi-2">
+      <button class="btn-inq" size="mini" bindtap="inq_cx">立即查询</button>
+  </view>
+
+</view>
+
