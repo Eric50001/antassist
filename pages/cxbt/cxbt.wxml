@@ -1,0 +1,149 @@
+<!--pages/cxbt/cxbt.wxml-->
+<view class="txt">
+    已有999位客户查询办理补贴，您需要填写一下信息，我们会严格遵守保密规则。
+
+
+</view>
+<form bindsubmit="formsubmit" bindreset="formreset">
+    <view class="line">
+        <view>1. 贵公司全称
+        </view>
+        <block wx:if="{{btlxC}}">
+            <picker mode="selector" range='{{sele_co_name_group}}' bindchange="fsele_co_name">
+                <input placeholder="请输入公司名称关键字" class="m-inputpart1" value='{{sele_co_name}}'></input>
+            </picker>
+        </block>
+        <block wx:if="{{btlxB}}" >
+            <input placeholder="请输入公司名称关键字" class="m-inputpart1" value='{{sele_co_name}}' bindchange='fKey_Word'></input>
+        </block>
+
+    </view>
+    <view class="line">
+        <view>2. 贵公司信用代码
+        </view>
+        <input placeholder="贵公司信用代码" class="m-inputpart" bindinput="app_cu_no" value='{{credit_no}}'></input>
+    </view>
+
+    <view class="line">
+        <view>3. 所属行业
+        </view>
+        <view class="line-1">
+            <picker mode="selector" bindchange="app_ind_a" range='{{sele_ind_a}}'>
+                <input placeholder="行业" class="m-inputpart" value="{{ind_a}}"></input>
+            </picker>
+            <picker mode="selector" bindchange="app_ind_b" range="{{sele_ind_b}}">
+                <input placeholder="行业分类" class="m-inputpart" value="{{ind_b}}"></input>
+            </picker>
+        </view>
+    </view>
+
+    <view class="line">
+        <view>4. 贵公司成立时间
+        </view>
+        <picker mode="date" bindchange="cubirthday">
+            <input class="m-inputpart" value="{{start_date}}"></input>
+        </picker>
+    </view>
+    <view class="line">
+        <view>5. 企业所属地
+        </view>
+        <picker mode="region" bindchange="cregion">
+            <input class="m-inputpart" value="{{cregion}}">日期</input>
+        </picker>
+    </view>
+
+    <view class="line">
+        <view>6. 法人身份
+        </view>
+        <radio-group bindchange="cboss_type" class="line-1-1">
+            <radio value="student">五年内毕业全日制大专以上学历 </radio>
+            <radio value="soldier">退伍军人</radio>
+            <radio value="unemploy">登记失业人员</radio>
+            <radio value="techni">专业技术学校毕业</radio>
+            <radio value="other">其他</radio>
+        </radio-group>
+    </view>
+
+
+    <view class="line">
+        <view>8. 法人是否购买社保
+        </view>
+        <radio-group bindchange="cscre">
+            <radio value="buyed">是 </radio>
+            <radio style="margin-left: 50rpx;" value="unbuyed">否</radio>
+        </radio-group>
+    </view>
+
+    <view class="line">
+        <view>9. 贵公司购买社保人数(不含法人)
+        </view>
+
+        <input placeholder="0" bindinput="Social_Scruity_Qty"></input>
+
+    </view>
+    <view class="line">
+        <view>10. 贵公司招聘应届大学生人数？（指毕业两年内全日制大专以上学生且购买社保）
+        </view>
+
+        <input placeholder="0" bindinput="Students"></input>
+
+    </view>
+
+    <view class="line">
+        <view>11. 贵公司招聘退役一年内军人数？（需购买社保）
+        </view>
+
+        <input placeholder="0" bindinput="Soldiers"></input>
+
+    </view>
+
+    <view class="line">
+        <view>12. 贵公司招聘就业困难人员人数？（需符合就业困难人员定义并购买社保）
+        </view>
+
+        <input placeholder="0" bindinput="Olderperson"></input>
+
+    </view>
+
+    <view class="line">
+        <view>13. 今年是否申请过相关补贴
+        </view>
+        <radio-group bindchange="Applied_Wether" >
+            <radio value="appllied">是 </radio>
+            <radio style="margin-left: 50rpx;" value="unapplied">否</radio>
+        </radio-group>
+    </view>
+
+    <view class="line">
+        <view>14. 联系电话
+        </view>
+        <view class="line-3">
+            <input placeholder="请输入手机号码" maxlength="15" bindinput="Inp_Phone_Number"></input>
+            <button size="mini" bindtap="Check_phone_Number" type="" style="color: blue;font-size: 14px; margin-left: -150rpx;">确定</button>
+        </view>
+    </view>
+
+    <view class="line">
+        <view>15. 联系人
+        </view>
+
+        <input placeholder="请输入联系人称呼" value="{{contactName}}"></input>
+
+    </view>
+
+
+
+    <view class="line-2">
+        <checkbox bindtap="Submit_Mark"></checkbox>
+
+        <navigator url="../infoauth/infoauth">
+
+            <button size="mini" style="color: blue; font-size: 13px;margin-left: -8px;">信息保护协议</button>
+        </navigator>
+
+    </view>
+    <view class="line-1">
+        <button style="color: blue;" bindtap="formreset">重新输入</button>
+        <button style="color: blue; " bindtap="formsubmit">确认提交</button>
+    </view>
+</form>
