@@ -1,0 +1,22 @@
+<!--pages/sqzzbtn/sqzzbtn.wxml-->
+<view class="container">
+    <scroll-view scroll-y>
+        <view class="line1" wx:for="{{policy_list}}" hidden="{{btlx!=item.btlx}}" data-index="{{item.pclass}}" bindtap="nav_page">
+            <view class="line1_1">
+                <view class="line2" style="color: {{item.fcolor}};background-color: {{item.bcolor}};font-size: {{item.ffont_size}};">
+                    {{item.pclass}}
+                </view>
+                <view class="line3">
+                    <view class="line4" style="font-size: {{item.pfont_size}};">
+                        {{item.pcontent}}
+                    </view>
+                    <view class="line5" style="font-size: {{item.pfont_size}};color: {{item.pcolor}};">
+                        {{item.pdetail}}
+                    </view>
+                </view>
+                <view style="margin-left: 10rpx;font-size: 15px;width: 150rpx;">开放申请中</view>
+            </view>
+            <view>___________________________________________</view>
+        </view>
+    </scroll-view>
+</view>
