@@ -1,0 +1,51 @@
+<!--首页-->
+<!--广告轮播-->
+<swiper autoplay>
+    <block wx:for="{{advimg}}">
+        <swiper-item>
+            <image src="{{item}}"></image>
+        </swiper-item>
+    </block>
+</swiper>
+
+<!--查询功能-->
+<view class="inquire">
+  
+        <input placeholder="请输入企业名称关键字" value="{{Key_Word}}" bindchange="inq_Key"> </input>
+        <view class="bussi-2">
+                    <button class="btn-inq" size="mini" bindtap="inq_cx">立即查询</button>
+        </view>
+   
+</view>
+
+<!--查询选项-->
+<view class="bussi">
+    <view class="bussi-1">
+       
+        <button size="mini" bindtap="inq_sbbt_btn" >
+            社保补贴
+        </button>
+        
+        <button size="mini" bindtap="inq_gwbt_btn">
+            岗位补贴
+        </button>
+        
+    </view>
+    <view class="bussi-1">
+       
+        <button size="mini" bindtap="inq_cxcy_btn">
+            创新创业
+        </button>
+        <button size="mini" bindtap="inq_xnjy_btn">
+            吸纳就业
+                    </button>
+    </view>
+    <view class="bussi-1">
+        <button size="mini" bindtap="inq_zjbt_btn">
+            租金补贴
+        </button>
+        <button size="mini" bindtap="inq_pxbt_btn">
+            资质认证
+        </button>
+    </view>
+</view>
