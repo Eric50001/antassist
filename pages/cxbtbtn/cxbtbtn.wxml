@@ -1,0 +1,22 @@
+<!--pages/cxbtbtn/cxbtbtn.wxml-->
+<view class="container">
+    <scroll-view scroll-y>
+        <view class="line1" wx:for="{{policy_list}}" bindtap="{{item.nav_page}}">
+            <view class="line1_1">
+                <view class="line2" style="color: {{item.fcolor}};background-color: {{item.bcolor}};">
+                    {{item.pclass}}
+                </view>
+                <view class="line3">
+                    <view class="line4">
+                        {{item.pcontent}}
+                    </view>
+                    <view class="line5">
+                        {{item.pdetail}}
+                    </view>
+                </view>
+                <view>正在申请</view>
+            </view>
+            <view>___________________________________________</view>
+        </view>
+    </scroll-view>
+</view>
