@@ -1,0 +1,65 @@
+{
+    "pages": [
+        "pages/inquire/inquire",
+        "pages/InputKey/InputKey",
+        "pages/service/service",
+        "pages/cooper/cooper",
+        "pages/about/about",
+        "pages/index/index",
+        "pages/cxbt/cxbt",
+        "pages/sqxm/sqxm",
+        "pages/cxzc/cxzc",
+        "pages/sqzz/sqzz",
+        "pages/txdk/txdk",
+        "pages/xmtz/xmtz",
+        "pages/cxbtbtn/cxbtbtn",
+        "pages/sqxmbtn/sqxmbtn",
+         "pages/sqzzbtn/sqzzbtn",
+        "pages/txdkbtn/txdkbtn",
+        "pages/xmtzbtn/xmtzbtn",
+        "pages/infoauth/infoauth",
+        "pages/inqresult/inqresult",
+        "pages/policyIn/policyIn",
+        "pages/SummaryResult/SummaryResult"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "企业补贴查询",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#000000",
+        "selectedColor": "#11cd6e",
+        "list": [{
+
+                "pagePath": "pages/inquire/inquire",
+                "text": "查询",
+                "iconPath": "images/inquire.png",
+                "selectedIconPath": "images/inquire.png"
+            },
+            {
+                "pagePath": "pages/service/service",
+                "text": "服务",
+                "iconPath": "images/service.png",
+                "selectedIconPath": "images/service.png"
+            },
+            {
+                "pagePath": "pages/cooper/cooper",
+                "text": "合作",
+                "iconPath": "images/cooper.png",
+                "selectedIconPath": "images/cooper.png"
+            },
+            {
+                "pagePath": "pages/about/about",
+                "text": "我的",
+                "iconPath": "images/about.png",
+                "selectedIconPath": "images/about.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2",
+    "lazyCodeLoading": "requiredComponents"
+}
