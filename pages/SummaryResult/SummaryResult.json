@@ -1,0 +1,9 @@
+{
+    "usingComponents": {},
+
+    "backgroundColor": "#008800",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#008800",
+    "navigationBarTitleText": "补贴查询结果",
+    "navigationBarTextStyle": "white"
+}

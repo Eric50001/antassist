@@ -1,0 +1,202 @@
+/* pages/SummaryResult/SummaryResult.wxss */
+.result {
+    margin-top: 10rpx;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15rpx;
+    margin-left: 15rpx;
+    margin-right: 15rpx;
+    border: cornsilk solid 1rpx;
+    border-radius: 5%;
+
+}
+
+.title {
+    margin-top: 10rpx;
+    width: 100%;
+    height: 50rpx;
+    font-size: 40rpx;
+    margin-left: 280rpx;
+    margin-bottom: 15rpx;
+    font-weight: 20000;
+    font-style:initial
+}
+
+.title1 {
+    margin-top: 10rpx;
+    width: 100%;
+    height: 50rpx;
+    font-size: 40rpx;
+    margin-left: 220rpx;
+    margin-bottom: 15rpx;
+    font-weight: 20000;
+
+}
+.title2 {
+    margin-top: 10rpx;
+    width: 100%;
+    height: 5rpx;
+    font-size: 30rpx;
+    margin-left: 5rpx;
+    margin-bottom: 15rpx;
+    font-weight: 20000;
+
+}
+
+.title_date {
+    margin-top: 10rpx;
+    width: 100%;
+    height: 5rpx;
+    font-size: 30rpx;
+    margin-bottom: 35rpx;
+    margin-left: 230rpx;
+    text-decoration: underline;
+}
+
+.btn-inq {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    margin-top: 1rpx;
+}
+
+.btn-inq button {
+    background-color: green;
+    size:initial;
+    font-size: 14px;
+color: white;
+    margin-top: 1rpx;
+}
+.bussi {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.bussi-1 {
+    margin-top: 50rpx;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+
+}
+
+.bussi-1 button {
+    display: inline;
+    font-size: 14px;
+    color: white;
+    background-color: green;
+
+}
+
+.bussi-2 {
+    margin-top: 5rpx;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+
+}
+
+.bussi-2 button {
+    display: inline;
+    font-size: 14px;
+    color: white;
+    background-color: green;
+
+}
+
+.line1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.line2{
+    font-size: 30rpx;
+    font-weight: 2000;
+    text-align: center;
+    text-justify: auto;
+    border-radius: 5px;
+    width: 200rpx;
+    color: blue;
+        
+}
+.line3{
+    font-size: 30rpx;
+    font: outline;
+    text-align: end;
+    width: 200rpx;
+    color: blue;
+    background-color: green;
+    
+}
+
+
+.line11{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15rpx;
+
+}
+
+.line21{
+    font-size: 35rpx;
+    font-weight: 2000;
+    text-align: center;
+    text-justify: auto;
+    border-radius: 5px;
+    width: 200rpx;
+    color: blue;
+        
+}
+.line31{
+    font-size: 35rpx;
+    font: outline;
+    text-align: end;
+    width: 600rpx;
+    color: blue;
+    margin-right: 25rpx;
+    text-decoration:underline;
+    
+}
+
+.line32{
+    font-size: 35rpx;
+    font: outline;
+    color: blue;
+    margin-left: 15rpx;
+    margin-bottom: 15rpx;
+    text-decoration:underline;
+    
+}
+
+.line51{
+    font-size: 35rpx;
+    font-weight: 2000;
+    text-align: center;
+    text-justify: auto;
+    border-radius: 5px;
+    width: 18%;
+    color: black;
+        
+}
+
+.line52{
+    font-size: 35rpx;
+    font-weight: 2000;
+    text-align: center;
+    border-radius: 5px;
+    width: 18%;
+    color: blue;
+    padding-left: 50rpx;
+    text-decoration: underline;
+        
+}

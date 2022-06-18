@@ -1,0 +1,117 @@
+<!--pages/SummaryResult/SummaryResult.wxml-->
+<view class="result">
+    <view class="title">
+        初查结果
+    </view>
+    <view class="title_date">
+        {{inq_date}}
+    </view>
+
+    <view class="line11">
+        <view class="line21">
+            企业名称:
+        </view>
+        <view class="line31">
+            {{cu_name}}
+        </view>
+    </view>
+    <view class="line11">
+        <view class="line21">
+            所属地区:
+        </view>
+
+        <view class="line31">
+            {{cregion}}
+        </view>
+    </view>
+
+    <view class="line1" style="padding-top: 15rpx;">
+        <view class="line51">
+            <view>
+                购买社保人数
+            </view>
+            <view class="line52">
+                {{social_scruity_qty}}
+            </view>
+        </view>
+        <view class="line51">
+            <view>
+                应届毕业生人数
+            </view>
+            <view class="line52">
+                {{students}}
+            </view>
+        </view>
+        <view class="line51">
+            <view>
+                近一年内退伍军人
+            </view>
+            <view class="line52">
+                {{soldiers}}
+            </view>
+        </view>
+        <view class="line51">
+            <view>
+                就业困难人员
+            </view>
+            <view class="line52">
+                {{olderperson}}
+            </view>
+        </view>
+    </view>
+
+    <view style="margin-bottom: 5rpx;">--------------------------------------------</view>
+
+    <view class="title1">
+        符合条件的项目
+    </view>
+    <view class="line32">
+        预计总金额{{amountOK}}万，明细如下，
+    </view>
+    <scroll-view scroll-y>
+        <view wx:for="{{policy_list}}">
+            <view class="line1" hidden="{{item.btxm!=0||item.btsubamt==0}}">
+                <view class="line2">
+                    {{item.pclass}}
+                </view>
+                <view class="line2">
+
+                    预计补贴金额
+                </view>
+                <view class="line2" style="text-decoration: underline;">
+
+                    {{item.btsubamt}}元
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+
+    <view class="title1">
+        需要规划的项目
+    </view>
+    <scroll-view scroll-y>
+        <view wx:for="{{policy_list}}">
+            <view class="line1" hidden="{{item.btxm==0&item.btsubamt!=0}}">
+                <view class="line2">
+                    {{item.pclass}}
+                </view>
+                <view class="line2">
+
+                    预计补贴金额
+                </view>
+                <view class="line2" style="text-decoration: underline;">
+
+                    {{item.btsubamt}}元
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+
+   
+
+    <view class="btn-inq">
+        <button size="mini">精准查询</button>
+        <button size="mini">咨询客服</button>
+    </view>
+
+</view>
